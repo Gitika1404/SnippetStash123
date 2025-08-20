@@ -4,8 +4,8 @@ pipeline {
   environment {
     IMAGE_NAME = "snippetstash"
     IMAGE_TAG = "latest"
-    DOCKERHUB_USER = "harshvashishth"
-    AWS_REGION = "ap-south-1"
+    DOCKERHUB_USER = "gitika1408"
+    AWS_REGION = "us-east-1"
     CONTAINER_NAME = "snippetstash_container"
     EC2_IP = ''
   }
@@ -13,7 +13,7 @@ pipeline {
   stages {
     stage('Clone GitHub Repo') {
       steps {
-        git branch: 'main', url: 'https://github.com/hrsh-1294/SnippetStash.git'
+        git branch: 'main', url: 'https://github.com/Gitika1404/SnippetStash123.git'
       }
     }
 

@@ -1,5 +1,5 @@
 variable "region" {
-  default = "ap-south-1"
+  default = "us-east-1"
   type = string
 }
 
@@ -10,7 +10,7 @@ variable "aws_ec2_instance_type" {
 
 variable "ami_id" {
   description = "AMI ID for the EC2 instance"
-  default     = "ami-0f918f7e67a3323f0" # Ubuntu 22.04 for ap-south-1
+  default     = "ami-020cba7c55df1f615" # Ubuntu 22.04 for us-east-1
   type        = string
 }
 
